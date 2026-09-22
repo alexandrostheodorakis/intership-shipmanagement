@@ -3,63 +3,100 @@ html{scroll-behavior:smooth}
 html,body{margin:0;padding:0}
 body{background:#fff;color:#062b52;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased}
 .site{width:100%;margin:0;background:#fff;overflow:hidden}
+
+/* Header */
 .header{height:138px;display:flex;align-items:center;justify-content:center;background:#fff}
 .logo{width:345px;height:auto;display:block}
+
+/* Hero — preserve the full source photograph */
 .hero{width:100%;margin:0;background:#fff;overflow:hidden}
-.hero img{width:100%;height:auto;object-fit:contain;object-position:center;display:block}
-.approach{background:#fff;padding:82px 0 78px;text-align:center}
-.approach h1{margin:0;font-size:44px;line-height:1.08;font-weight:300;color:#070707;letter-spacing:-1px}
-.intro{margin:44px auto 82px;max-width:1080px;font-size:18px;line-height:1.5;letter-spacing:.15px;color:#062b52}
-.approach h2{margin:0 0 44px;font-size:38px;line-height:1.05;font-weight:300;color:#070707;letter-spacing:-.6px}
-.solutions{display:grid;grid-template-columns:1fr 1fr;gap:28px;width:88%;max-width:1650px;margin:0 auto;text-align:left}
-.solution{background:#e7e7e7;padding:60px 38px 52px;color:#062b52}
-.solution h3{margin:0 0 20px;font-size:19px;line-height:1.2;font-weight:400;color:#062b52}
-.solution>p{margin:0 0 23px;font-size:13.2px;line-height:1.43;text-align:left}
-.solution h4{margin:21px 0 4px;font-size:13.4px;line-height:1.2;font-weight:700;color:#062b52}
-.solution h4+p{margin-bottom:0}
+.hero img{width:100%;height:auto;display:block}
+
+/* Approach */
+.approach{background:#fff;padding:82px 0 86px;text-align:center}
+.approach h1,
+.approach h2{margin:0;color:#070707;font-weight:300;letter-spacing:-1.1px}
+.approach h1{font-size:46px;line-height:1.08}
+.intro{margin:42px auto 84px;max-width:1120px;padding:0 24px;font-size:18px;line-height:1.52;letter-spacing:.08px;color:#062b52}
+.approach h2{font-size:46px;line-height:1.08;margin-bottom:46px}
+
+/* Service cards */
+.solutions{display:grid;grid-template-columns:1fr 1fr;gap:30px;width:88%;max-width:1650px;margin:0 auto;text-align:left;align-items:stretch}
+.solution{background:#e9e9e9;padding:54px 42px 58px;color:#062b52}
+.solution h3{margin:0 0 22px;font-size:21px;line-height:1.2;font-weight:400;color:#062b52;letter-spacing:-.15px}
+.solution>p{margin:0 0 28px;font-size:14px;line-height:1.52;text-align:left;color:#062b52}
+.solution h4{margin:23px 0 6px;font-size:14.2px;line-height:1.28;font-weight:700;color:#062b52;letter-spacing:-.05px}
+.solution h4+p{margin:0}
+.solution br{line-height:1.52}
+
+/* Impact */
 .impact{width:100%;display:grid;grid-template-columns:1fr 1.22fr;background:#fff;margin-top:0;align-items:stretch}
-.stats{border-left:1px solid #111;padding:72px 42px 64px;min-height:0;display:flex;flex-direction:column;justify-content:flex-start;gap:44px}
+.stats{padding:76px 54px 70px;display:flex;flex-direction:column;justify-content:center;gap:58px}
 .stats div{display:flex;flex-direction:column}
-.stats strong{color:#244dff;font-size:58px;line-height:1;font-weight:300;letter-spacing:-1.5px}
-.stats span{margin-top:9px;color:#062b52;font-size:13px;line-height:1.2;letter-spacing:.1px}
-.impact>img{width:100%;height:auto;display:block;object-fit:contain}
-.careers{padding:42px 0 56px;text-align:center;background:#fff}
+.stats strong{color:#244dff;font-size:78px;line-height:.98;font-weight:300;letter-spacing:-2.4px}
+.stats span{margin-top:12px;color:#062b52;font-size:14px;line-height:1.25;letter-spacing:.1px}
+.impact>img{width:100%;height:auto;display:block}
+
+/* Careers */
+.careers{padding:50px 0 62px;text-align:center;background:#fff}
 .career-mark{width:44px;height:44px;border:1px solid #111;border-radius:50%;margin:0 auto 28px;display:flex;align-items:center;justify-content:center;font-size:25px;color:#111}
-.careers h2,.contact h2{margin:0;color:#111;font-size:40px;line-height:1.15;font-weight:300;letter-spacing:-.5px}
-.careers>p{width:90%;max-width:1200px;margin:30px auto 24px;font-size:16px;line-height:1.55;color:#062b52}
+.careers h2,.contact h2{margin:0;color:#111;font-size:42px;line-height:1.15;font-weight:300;letter-spacing:-.7px}
+.careers>p{width:90%;max-width:1200px;margin:30px auto 30px;font-size:16px;line-height:1.55;color:#062b52}
 .careers>img{width:96%;max-width:1760px;height:auto;display:block;margin:0 auto;border-radius:15px}
-.contact{text-align:center;padding:12px 30px 44px;background:#fff}
-.contact h2{font-size:36px}
-.contact>p{margin:30px auto 0;font-size:14px;line-height:1.55;color:#111}
-.contact .contact-details{margin-top:12px}
-.footer{border-top:1px dashed #777;padding:30px 48px 38px;background:#fff;color:#222}
+
+/* Contact */
+.contact{text-align:center;padding:16px 30px 48px;background:#fff}
+.contact h2{font-size:40px}
+.contact>p{margin:28px auto 0;font-size:15px;line-height:1.55;color:#111}
+.contact .contact-details{margin-top:10px}
+
+/* Footer */
+.footer{padding:34px 48px 40px;background:#fff;color:#222}
 .footer-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:30px;max-width:1650px;margin:0 auto}
 .footer-logo{width:190px;height:auto;display:block;margin-bottom:20px}
 .footer h3{font-size:12px;font-weight:400;margin:0 0 7px;letter-spacing:.2px}
 .footer p{font-size:12px;line-height:1.5;margin:0}
 .copyright{max-width:1650px;margin:32px auto 0;font-size:11px}
+
+/* Responsive */
 @media(max-width:900px){
   .header{height:120px}.logo{width:300px}
-  .hero img{height:500px}
-  .approach{padding:65px 0 60px}
-  .approach h1{font-size:38px}.approach h2{font-size:34px}
-  .intro{padding:0 28px;font-size:16px;margin-top:36px;margin-bottom:62px}
-  .solutions{width:92%;gap:20px}.solution{padding:48px 28px 42px}
-  .impact{grid-template-columns:1fr 1fr}.stats{padding:58px 30px;gap:36px}.stats strong{font-size:48px}
+  .approach{padding:68px 0 66px}
+  .approach h1,.approach h2{font-size:40px}
+  .intro{padding:0 32px;font-size:16px;margin-top:36px;margin-bottom:64px}
+  .solutions{width:92%;gap:22px}
+  .solution{padding:48px 30px 50px}
+  .solution>p{font-size:13.5px}
+  .solution h4{font-size:14px}
+  .impact{grid-template-columns:1fr 1fr}
+  .stats{padding:60px 34px;gap:42px}
+  .stats strong{font-size:64px}
   .careers>img{width:94%}
 }
 @media(max-width:700px){
   .header{height:105px}.logo{width:270px}
-  .hero img{height:420px;object-position:center center}
-  .approach{padding-top:52px}.approach h1{font-size:32px}.approach h2{font-size:30px}
-  .intro{font-size:15px;line-height:1.5;padding:0 22px;margin-top:30px;margin-bottom:52px}
+  .hero img{width:100%;height:auto}
+  .approach{padding:54px 0 58px}
+  .approach h1,.approach h2{font-size:32px;letter-spacing:-.5px}
+  .intro{font-size:15px;line-height:1.52;padding:0 22px;margin-top:30px;margin-bottom:52px}
   .intro br{display:none}
-  .solutions{grid-template-columns:1fr;width:90%}
-  .solution{padding:40px 24px}.solution h3{font-size:18px}.solution>p,.solution h4{font-size:13px}
-  .impact{grid-template-columns:1fr}.stats{border-right:1px solid #111;min-height:auto;padding:48px 28px;gap:34px}.stats strong{font-size:48px}.impact>img{width:100%;height:auto}
-  .careers{padding-top:34px}.careers h2,.contact h2{font-size:30px}.careers>p{width:88%;font-size:14px}.careers>img{width:92%;border-radius:12px}
-  .footer{padding:26px 28px 34px}.footer-grid{grid-template-columns:1fr 1fr}.footer-logo{width:170px}
+  .solutions{grid-template-columns:1fr;width:90%;gap:18px}
+  .solution{padding:40px 26px 44px}
+  .solution h3{font-size:19px}
+  .solution>p,.solution h4{font-size:13.5px}
+  .impact{grid-template-columns:1fr}
+  .stats{padding:52px 28px;gap:38px}
+  .stats strong{font-size:60px}
+  .impact>img{width:100%;height:auto}
+  .careers{padding-top:38px}
+  .careers h2,.contact h2{font-size:31px}
+  .careers>p{width:88%;font-size:14px}
+  .careers>img{width:92%;border-radius:12px}
+  .contact{padding-top:10px}
+  .footer{padding:28px 28px 36px}.footer-grid{grid-template-columns:1fr 1fr}.footer-logo{width:170px}
 }
 @media(max-width:450px){
-  .logo{width:235px}.hero img{height:340px}.footer-grid{grid-template-columns:1fr}.approach h1{font-size:29px}.approach h2{font-size:28px}
+  .logo{width:235px}
+  .footer-grid{grid-template-columns:1fr}
+  .approach h1,.approach h2{font-size:29px}
 }
